@@ -3,7 +3,9 @@ export interface PlayerModel {
   lastName: string;
   age: number;
   rate: number;
-  league: string;
-  team: string;
+  leagueCode: string;
+  leagueName: string;
+  teamCode: string;
+  teamName: string;
   position: string;
 }

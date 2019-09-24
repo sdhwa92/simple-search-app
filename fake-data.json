@@ -1,0 +1,52 @@
+{
+  "player": [
+    {
+      "id": 1,
+      "firstName": "Heung-min",
+      "lastName": "Son",
+      "age": 27,
+      "rate": 5,
+      "leagueName": "Premier League",
+      "leagueCode": "premier_league",
+      "teamName": "Tottenham Hotspur",
+      "teamCode": "tottenham_hotspur",
+      "position": "FW"
+    },
+    {
+      "id": 2,
+      "firstName": "Erik",
+      "lastName": "Lamela",
+      "age": 27,
+      "rate": 4,
+      "leagueName": "Premier League",
+      "leagueCode": "premier_league",
+      "teamName": "Tottenham Hotspur",
+      "teamCode": "tottenham_hotspur",
+      "position": "MF"
+    },
+    {
+      "id": 3,
+      "firstName": "Eden",
+      "lastName": "Hazard",
+      "age": 28,
+      "rate": 5,
+      "leagueName": "La Liga",
+      "leagueCode": "la_liga",
+      "teamName": "Real Madrid",
+      "teamCode": "real_madrid",
+      "position": "FW"
+    },
+    {
+      "id": 4,
+      "firstName": "Lionel",
+      "lastName": "Messi",
+      "age": 32,
+      "rate": 5,
+      "leagueName": "La Liga",
+      "leagueCode": "la_liga",
+      "teamName": "Barcelona",
+      "teamCode": "barcelona",
+      "position": "FW"
+    }
+  ]
+}

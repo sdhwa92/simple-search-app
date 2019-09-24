@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppService} from '../../services/app.service';
 
 import { PlayerModel } from '../../models/player.model';
 
@@ -9,33 +10,19 @@ import { PlayerModel } from '../../models/player.model';
 })
 export class SearchResultsComponent implements OnInit {
 
-  // Dummy Data
-  PLAYERS_DATA: PlayerModel[] = [
-    {
-      firstName: 'Heung-min',
-      lastName: 'Son',
-      age: 27,
-      rate: 5,
-      league: 'premier_league',
-      team: 'tottenham_hotspur',
-      position: 'FW'
-    },
-    {
-      firstName: 'Erik',
-      lastName: 'Lamela',
-      age: 27,
-      rate: 4,
-      league: 'premier_league',
-      team: 'tottenham_hotspur',
-      position: 'MF'
-    },
-  ];
+  players: PlayerModel[];
 
-  players: PlayerModel[] = this.PLAYERS_DATA;
-
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
+    this.getAllPlayers();
+  }
+
+  getAllPlayers() {
+    this.appService.getAllPlayers().subscribe(data => {
+      this.players = data;
+      console.log(data);
+    });
   }
 
 }
